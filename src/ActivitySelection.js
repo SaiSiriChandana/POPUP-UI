@@ -28,7 +28,7 @@ function ActivitySelection() {
         const { latitude, longitude } = position.coords;
         try {
           const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`
+            ``
           );
           const data = await response.json();
           if (data && data.weather && data.weather[0]) {
