@@ -1,0 +1,61 @@
+.voice-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25); /* Slight dimming */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.voice-popup {
+  background: #fff8f0;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: popIn 0.3s ease;
+}
+
+.mic-status {
+  font-size: 16px;
+  margin: 15px 0;
+  color: #ff5722;
+}
+
+.transcript-box {
+  background: #fff3e0;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.close-button {
+  margin-top: 20px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
